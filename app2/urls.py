@@ -1,9 +1,9 @@
 from django.urls import path
 from . import views
-from django.views.generic import TemplateView
+from django.views.generic import RedirectView
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='app2/index.html')),
+    path('', RedirectView.as_view(url='vista1/')), # <- Asegúrate de que vuelva a estar así
     path('vista1/', views.vista1, name='vista1'),
     path('vista2/', views.vista2, name='vista2'),
 ]
