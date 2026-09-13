@@ -1,0 +1,14 @@
+# Entornos virtuales
+venv/
+env/
+
+# Base de datos local de Django
+db.sqlite3
+
+# Archivos compilados de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuraciones locales (si usas variables de entorno)
+.env
